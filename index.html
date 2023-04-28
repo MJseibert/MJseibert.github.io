@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="styles.css"/>
+    <title>Document</title>
+</head>
+<body style="background-color: aquamarine;">
+
+    <div id="h1">
+    <h1>CSS SELECTORS</h1>
+    </div> 
+
+
+    <table>
+
+        <tr>
+            <th id="th1">SELECTOR</th>
+            <th id="th2">MEANING</th>
+            <th id="th3">EXAMPLE</th>
+        </tr>
+
+        <tr>
+            <td><span style="color: rgb(255, 0, 0);"><strong>UNIVERSAL SELECTOR</strong></span></td>
+            <td><em><strong>Applies to all elements in the document</strong></em></td>
+            <td><span style="color:rgb(255, 0, 0)"><strong>* { }</strong></span><br>Targets all elements on the page
+            </td>
+        </tr>
+
+        <tr>
+            <td><span style="color: rgb(255, 0, 0);"><strong>TYPE SELECTOR</strong></span></td>
+            <td><em><strong>Matches element names</strong></em></td>
+            <td><span style="color:rgb(255, 0, 0)"><strong>h1, h2, h3 { }</strong></span><br>Targets the &lt;h1&gt;, &lt;h2&gt; and &lt;h3&gt; elements
+            </td>
+        </tr>
+
+        <tr>
+            <td><span style="color: rgb(255, 0, 0);"><strong>CLASS SELECTOR</strong></span></td>
+            <td><em><strong>Matches an element whose class attribute has a value that matches the one specified after the period (or full stop) symbol</strong></em></td>
+            <td><span style="color:rgb(255, 0, 0)"><strong>.note { }</strong></span><br>Targets any element whose class attribute has a value of note<br>
+            <span style="color:rgb(255, 0, 0)"><strong>p.note { }</strong></span><br>Targets only &lt;p&gt; elements whose class attribute has a value of note<br>
+        </tr>
+
+        <tr>
+            <td><span style="color: rgb(255, 0, 0);"><strong>ID SELECTOR</strong></span></td>
+            <td><em><strong>Matches an element whose id attribute has a value that matches the one specified after the pound or hash symbol</strong></em></td>
+            <td><span style="color:rgb(255, 0, 0)"><strong>#introduction { }</strong></span><br>Targets the element whose id attribute has a value of introduction
+            </td>
+        </tr>
+
+        <tr>
+            <td><span style="color: rgb(255, 0, 0);"><strong>CHILD SELECTOR</strong></span></td>
+            <td><em><strong>Matches an element that is a direct child of another</strong></em></td>
+            <td><span style="color:rgb(255, 0, 0)"><strong>li&gt;a { }</strong></span><br>Targets any &lt;a&gt; elements that are children of an &lt;li&gt; element (but not other &lt;a&gt; elements in the page)
+            </td>
+        </tr>
+
+        <tr>
+            <td><span style="color: rgb(255, 0, 0);"><strong>DESCENDANT SELECTOR</strong></span></td>
+            <td><em><strong>Matches an element that is a descendant of another specified element (not just a direct child of that element)</strong></em></td>
+            <td><span style="color:rgb(255, 0, 0)"><strong>p a { }</strong></span><br>Targets any &lt;a&gt; elements that sit inside a &lt;p&gt; element, even if there are other elements nested between them
+            </td>
+        </tr>
+
+        <tr>
+            <td><span style="color: rgb(255, 0, 0);"><strong>ADJACENT SIBLING SELECTOR</strong></span></td>
+            <td><em><strong>Matches an element that is the next sibling of another</strong></em></td>
+            <td><span style="color:rgb(255, 0, 0)"><strong>h1+p { }</strong></span><br>Targets the first &lt;p&gt; element after any &lt;h1&gt; element (but not other &lt;p&gt; elements)
+            </td>
+        </tr>
+
+        <tr>
+            <td><span style="color: rgb(255, 0, 0);"><strong>GENERAL SIBLING SELECTOR</strong></span></td>
+            <td><em><strong>Matches an element that is a sibling of another, although it does not have to be the directly preceding element</strong></em></td>
+            <td><span style="color:rgb(255, 0, 0)"><strong>h1~p { }</strong></span><br>If you had two &lt;p&gt; elements that are siblings of an &lt;h1&gt; element, this rule would apply to both
+            </td>
+        </tr>
+
+        
+
+        
+        
+    </table>
+    
+</body>
+</html>
